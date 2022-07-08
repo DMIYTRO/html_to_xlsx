@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input[type=button], input[type=file], input[type=reset] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+   <body>
+      <form action = "http://localhost:8080/api/v1/to_excel" method = "post" enctype="multipart/form-data">
+         <p>Upload File:</p>
+         <p><input type = "file" name = "input" /></p>
+         <p><input type = "submit" value = "Convert To Excel"/></p>
+      </form>
+   </body>
+</html>
